@@ -21,9 +21,16 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Pocket-Moonk";
 }
+p{
+   font-family: "Orbitron";
+}
 @font-face {
   font-family: "Pocket-Moonk";
   src: url("../fonts/Pocket\ Monk.otf");
+}
+@font-face {
+  font-family: "Orbitron";
+  src: url("../fonts/Orbitron-Regular.ttf");
 }
 
 /*--------------------------------------------------------------
