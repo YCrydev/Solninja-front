@@ -326,7 +326,23 @@ OG ninja role<br>
         </div>
 
       </div>
+<form  method="post" class="php-email-form">
+              <div class="row gy-4">
 
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="sol_address" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
     </section><!-- End Team Section -->
   </main><!-- End #main -->
 
@@ -356,17 +372,16 @@ OG ninja role<br>
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+  sol_address = $("#sol_address").val()
     $.ajax({
                            type: "POST",
                            url: "https://gamefi-token.com/whitelist.php",
                            dataType:"json",
                            data: {
-                               "sol_address": "Sup"
+                               "sol_address": sol_address
                            },
                            success: function(data){
                                console.log(data);
-                               
-                             $("#loading_modal").modal("hide")
                            }
                          }); 
   </script>
