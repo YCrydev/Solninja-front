@@ -166,7 +166,10 @@ section {
   z-index: 997;
   padding: 20px 0;
 }
-
+.logo-img{
+  width:50px;
+  border-radius:50%;
+}
 .header.header-scrolled {
   background: black;
   padding: 15px 0;
