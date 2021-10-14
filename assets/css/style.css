@@ -786,7 +786,9 @@ section {
   font-size: 15px;
   color: #848484;
 }
-
+.roadmap-img{
+  
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
@@ -802,7 +804,10 @@ section {
   border-radius: 5px;
  background-color: white;
 }
-
+.roadmap-img{
+  height:auto;
+  max-width:60px;
+}
 .services .service-box .icon {
   font-size: 36px;
   padding: 40px 20px;
