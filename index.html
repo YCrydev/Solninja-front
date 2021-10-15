@@ -374,8 +374,9 @@ OG ninja role<br>
   <script src="assets/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  sol_address = $("#sol_address").val()
+
     $(document).on('click', '#sol_address_btn', function() {
+        sol_address = $("#sol_address").val()
     $.ajax({
                            type: "POST",
                            url: "https://gamefi-token.com/whitelist.php",
