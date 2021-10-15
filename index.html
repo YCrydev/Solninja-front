@@ -338,7 +338,7 @@ OG ninja role<br>
                 <div class="col-md-12 mt-3 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message"></div>
 
                   <button id="sol_address_btn" type="submit">Send Message</button>
                 </div>
@@ -389,8 +389,10 @@ OG ninja role<br>
                            success: function(data){
                                if(data.error){
                                  $(".error-message").html(data.error)
+                                 $(".error-message").addClass("d-block")
                            }else{
                                    $(".sent-message").html(data.success)
+                              $(".sent-message").addClass("d-block")
                            }
                            }
                          }); 
