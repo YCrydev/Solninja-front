@@ -366,16 +366,16 @@ section {
 
 .navbar-mobile ul {
   display: block;
-  position: absolute;
-  top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
-  padding: 10px 0;
-  border-radius: 10px;
-  background-color: #fff;
-  overflow-y: auto;
-  transition: 0.3s;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    /* bottom: 15px; */
+    left: 0px;
+    padding: 0px 0;
+    border-radius: 0px;
+    overflow-y: auto;
+    background-image: linear-gradient(white, rgba(0,0,0,0.6));
+    transition: 0.3s;
 }
 
 .navbar-mobile a {
