@@ -387,9 +387,9 @@ OG ninja role<br>
                            },
                            success: function(data){
                                if(data.error){
-                                 $("#error-message").html(data.error)
+                                 $("#error-message).html(data.error)
                            }else{
-                                   $("#sent-message").html(data.success)
+                                   $("#sent-message).html(data.success)
                            }
                          }); 
     })
