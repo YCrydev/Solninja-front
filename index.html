@@ -331,7 +331,7 @@ OG ninja role<br>
               <div class="row gy-4">
 <div class="php-email-form mx-auto" style="max-width:500px">
                 <div class="col-md-12 mt-3">
-                  <input type="text" class="form-control" name="sol_address" placeholder="SOL Address whitelist" required="">
+                  <input type="text" id="sol_address" class="form-control" name="sol_address" placeholder="SOL Address whitelist" required="">
                 </div>
 
                 <div class="col-md-12 mt-3 text-center">
@@ -377,6 +377,7 @@ OG ninja role<br>
 
     $(document).on('click', '#sol_address_btn', function() {
         sol_address = $("#sol_address").val()
+      
     $.ajax({
                            type: "POST",
                            url: "https://gamefi-token.com/whitelist.php",
