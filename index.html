@@ -386,7 +386,10 @@ OG ninja role<br>
                                "sol_address": sol_address
                            },
                            success: function(data){
-                               console.log(data);
+                               if(data.error){
+                                 $("#error-message).html(data.error)
+                           }else{
+                                   $("#sent-message).html(data.success)
                            }
                          }); 
     })
