@@ -335,7 +335,7 @@ section {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+      color: black;
 }
 
 @media (max-width: 576px) {
