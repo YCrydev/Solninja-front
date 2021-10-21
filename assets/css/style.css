@@ -2414,6 +2414,11 @@ section {
   opacity: 0.8;  /* for demo purpose  */
 }
 .stack-top{
+      padding-top: 10px;
+    padding-right: 10px;
+    border-top: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 10px;
   z-index: 9;
   margin: 10px 10px -10px -10px; /* for demo purpose  */
 }
