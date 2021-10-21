@@ -2405,3 +2405,19 @@ section {
   font-size: 13px;
   color: #012970;
 }
+.box{
+  width: 90%;
+  height: 90%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;  /* for demo purpose  */
+}
+.stack-top{
+  z-index: 9;
+  margin: 10px 10px -10px -10px; /* for demo purpose  */
+}
+.stack-bottom{
+border: 1px solid black; 
+border-radius:10px;
+}
