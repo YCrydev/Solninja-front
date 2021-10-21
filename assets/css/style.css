@@ -2408,7 +2408,7 @@ section {
 .card-box{
   width: 90%;
   height: 90%;            
-  position: absolute;
+
   top: 0;
   left: 0;
   opacity: 0.8;  /* for demo purpose  */
@@ -2419,8 +2419,8 @@ section {
     border-top: 2px solid white;
     border-right: 2px solid white;
     border-radius: 10px;
+      height: 100%;
   z-index: 9;
-  margin: 10px 10px -10px -10px; /* for demo purpose  */
 }
 .stack-bottom{
 border: 1px solid black; 
