@@ -320,7 +320,7 @@ RARITY: 7.5%</p>
                 ✅ Boosting server and Nitro<br>
                 ✅ Launch V1 of website<br>
                 Minting of NFTs<br>
-                Launch SolNinja-Go on various marketplace</p>
+                Launch SolNinja on various marketplace</p>
             </div>
           </div>
 
@@ -328,7 +328,7 @@ RARITY: 7.5%</p>
             <div class="service-box red">
              <img src="assets/img/roadmap-img.jpeg" class="icon roadmap-img">
               <h3>R4</h3>
-              <p>Build SolNinja-Go marketplace<br>
+              <p>Build SolNinja marketplace<br>
                 Reveal V2 of website with interactive rarity search<br></p>
           
             </div>
@@ -339,7 +339,7 @@ RARITY: 7.5%</p>
              <img src="assets/img/roadmap-img.jpeg" class="icon roadmap-img">
               <h3>2022---</h3>
               <p>Research feedbacks from community on other things they’d like to see<br>
-                Create a token for SolNinja-Go so we can invest in the community together<br></p>
+                Create a token for SolNinja so we can invest in the community together<br></p>
          
             </div>
           </div>
@@ -459,7 +459,9 @@ RARITY: 7.5%</p>
       <section id="whitelist" class="contact">
 
               <div class="row gy-4">
+               
 <div class="php-email-form mx-auto" style="max-width:500px">
+  <p id="countdown" class="justify-content-center d-flex" style="font-size: 20px;"></p>
                 <div class="col-md-12 mt-3">
                   <input type="text" id="sol_address" class="form-control" name="sol_address" placeholder="SOL Address whitelist" required="">
                 </div>
@@ -525,7 +527,36 @@ RARITY: 7.5%</p>
                            }
                            }
                          }); 
+                         // Set the date we're counting down to
+
     })
+    var countDownDate = new Date("Nov 2, 2021 17:00:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="countdown"
+  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "EXPIRED";
+  }
+}, 1000);
   </script>
 </body>
 
