@@ -507,9 +507,11 @@ RARITY: 7.5%</p>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 
-    $(document).on('click', '#sol', function() {
+    $(document).on('click', '#sol_address_btn', function() { 
         sol_address = $("#sol_address").val()
-      
+        wwxqc = localStorage.getItem("wwxqc");
+        if(wwxqc=="nnp"){$(".error-message").html("You have already sent an address on this device")
+                                 $(".error-message").addClass("d-block")}else{
     $.ajax({
                            type: "POST",
                            url: "https://gamefi-token.com/whitelist.php",
@@ -522,11 +524,13 @@ RARITY: 7.5%</p>
                                  $(".error-message").html(data.error)
                                  $(".error-message").addClass("d-block")
                            }else{
+                            localStorage.setItem("wwxqc", "nnp")
                                    $(".sent-message").html(data.success)
                               $(".sent-message").addClass("d-block")
                            }
                            }
                          }); 
+                        }
                          // Set the date we're counting down to
 
     })
