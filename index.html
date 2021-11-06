@@ -92,6 +92,9 @@
           <h1 data-aos="fade-up" class="text-white">(...Inserts ninja-ish theme song...) </h1>
           <h2 data-aos="fade-up" data-aos-delay="400" class="text-white">Scurrying around of small sized chibi ninjas doing ninja stunts and making noises</h2>
           <div data-aos="fade-up" data-aos-delay="600">
+            <p class="justify-content-center d-flex mt-3" style="font-size: 20px;">Count down till mint</p>
+
+            <p id="countdown" class="justify-content-center d-flex mt-3" style="font-size: 20px;"></p>
             <div class="text-center text-lg-start">
               <a href="#values" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Connect Wallet</span>
@@ -461,7 +464,7 @@ RARITY: 7.5%</p>
               <div class="row gy-4">
                
 <div class="php-email-form mx-auto" style="max-width:500px">
-  <p id="countdown" class="justify-content-center d-flex" style="font-size: 20px;"></p>
+ 
                 <div class="col-md-12 mt-3">
                   <input type="text" id="sol_address" class="form-control" name="sol_address" placeholder="SOL Address whitelist" required="">
                 </div>
@@ -534,7 +537,7 @@ RARITY: 7.5%</p>
                          // Set the date we're counting down to
 
     })
-    var countDownDate = new Date("Nov 2, 2021 17:00:25").getTime();
+    var countDownDate = new Date("Nov 10, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -558,7 +561,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Whitelist is Open!!!";
+    document.getElementById("countdown").innerHTML = "Mint is Open!!!";
   }
 }, 1000);
   </script>
