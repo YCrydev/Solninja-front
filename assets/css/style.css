@@ -2446,6 +2446,8 @@ border-radius:10px;
   margin-left: 30px;
   margin-top: 5px;
   z-index: 1;
+  height: 50px;
+  width: auto;
 }
 .floating-1 { 
   animation-name: floating-1;
@@ -2463,7 +2465,9 @@ border-radius:10px;
 
 @keyframes floating-1 {
   0% { transform: translate(0,  0px); }
-  50%  { transform: translate(25vh, 75vh); }
+  20%  { transform: translate(25vh, 25vh); }
+  50%  { transform: translate(55vh, 50vh); }
+  70%  { transform: translate(70vh, 75vh); }
   100%   { transform: translate(0, -0px); }   
 }
 @keyframes floating-2 {
