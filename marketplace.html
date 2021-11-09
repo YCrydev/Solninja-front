@@ -90,8 +90,8 @@
 
     $(document).on('click', '#submit_email_btn', function() { 
         email = $("#email").val()
-        wwxqc = localStorage.getItem("wwxqc");
-        if(wwxqc=="nnp"){$(".error-message").html("You have already sent an address on this device")
+        wwxqc123 = localStorage.getItem("wwxqc123");
+        if(wwxqc123=="nnp"){$(".error-message").html("You have already sent an address on this device")
                                  $(".error-message").addClass("d-block")}else{
     $.ajax({
                            type: "POST",
@@ -105,7 +105,7 @@
                                  $(".error-message").html(data.error)
                                  $(".error-message").addClass("d-block")
                            }else{
-                            localStorage.setItem("wwxqc", "nnp")
+                            localStorage.setItem("wwxqc123", "nnp")
                                    $(".sent-message").html(data.success)
                               $(".sent-message").addClass("d-block")
                            }
