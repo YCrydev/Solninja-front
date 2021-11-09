@@ -91,7 +91,7 @@
     $(document).on('click', '#submit_email_btn', function() { 
         email = $("#email").val()
         wwxqc123 = localStorage.getItem("wwxqc123");
-        if(wwxqc123=="nnp"){$(".error-message").html("You have already sent an address on this device")
+        if(wwxqc123=="nnp"){$(".error-message").html("You have already sent an email address on this device")
                                  $(".error-message").addClass("d-block")}else{
     $.ajax({
                            type: "POST",
