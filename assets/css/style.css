@@ -2235,6 +2235,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
+  background: #f6f9ff;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+}
+
+
+.footer-alt {
   position: fixed;
   bottom: 0;
   width: 100%;
