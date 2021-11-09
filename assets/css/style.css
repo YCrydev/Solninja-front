@@ -2451,16 +2451,16 @@ border-radius:10px;
 }
 .floating-1 { 
   animation-name: floating-1;
-  animation-duration: 10s;
+  animation-duration: 20s;
 }
 
 .floating-2 { 
   animation-name: floating-2;
-  animation-duration: 10s;
+  animation-duration: 20s;
 }
 .floating-3 { 
   animation-name: floating-3;
-  animation-duration: 10s;
+  animation-duration: 20s;
 }
 
 @keyframes floating-1 {
