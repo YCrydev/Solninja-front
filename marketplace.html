@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Solninja Go</title>
+	<meta name="description" content="Solninja Go NFT">
+	<meta name="image" content="https://www.solninja-go.art/assets/img/main-sm.png">
+  <meta content="Solninja Go NFT" name="keywords">
+	<meta name="author" content="Solninja Go NFT">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Solninja Go NFT">
+    <meta property="og:description" content="Solninja Go NFT">
+    <meta property="og:image" content="https://www.solninja-go.art/assets/img/main-sm.png">
+    
+    <meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.solninja-go.art/">
+<meta property="twitter:title" content="Solninja Go NFT">
+<meta property="twitter:description" content="Solninja Go NFT">
+<meta property="twitter:image" content="https://www.solninja-go.art/assets/img/main-sm.png">
+
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Favicons -->
+  <link href="assets/img/main-sm.png" rel="icon">
+  <link href="assets/img/main-sm.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+  
+<body style="background:url(https://www.solninja-go.art/assets/img/ThirstyBabyishHusky-max-1mb.gif)">
+
+  <main id="main">
+<section class="contact" id="whitelist"><div class="row gy-4"><div class="mx-auto php-email-form" style="max-width:500px">
+  <a href="index.html" class="d-flex align-items-center logo section-header justify-content-center"><img class="logo-img-alt" src="assets/img/Main-removebg-preview.png" alt=""> <span style="font-size: 50px;">SOLNINJA-GO</span></a>
+
+    <div class="col-md-12 mt-3">
+        <input class="form-control" id="sol_address" name="sol_address" placeholder="Join Waitlist" required="">
+    </div><div class="col-md-12 mt-3 text-center"><div class="loading">Loading</div><div class="error-message">
+
+    </div><div class="sent-message"></div><button id="sol_address_btn" type="submit">Send Email</button>
+</div></div></div></section>
+  </main><!-- End #main -->
+
+  <footer class="footer" id="footer"><div class="container">
+    <div class="row d-flex mt-3 justify-content-center" style="max-width: 570px;">
+      <div class="col-2 col-md-1"><a class="text-white" href="https://discord.com/invite/2NsduQUuxt"><i style="font-size: 30px;" class="fab fa-discord"></i></a></div>
+      <div class="col-2 col-md-1"><a class="text-white" href="https://twitter.com/Solninja_go"><i style="font-size: 30px;" class="fab fa-twitter"></i></a></div>
+      <div class="col-2 col-md-1"><a class="text-white" href="https://solninja-go.medium.com"><i style="font-size: 30px;" class="fab fa-medium-m"></i></a></div>    </div>
+  </div></footer>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/cjs/popper-base.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
+<script>
+
+    $(document).on('click', '#sol_address_btn', function() { 
+        sol_address = $("#sol_address").val()
+        wwxqc = localStorage.getItem("wwxqc");
+        if(wwxqc=="nnp"){$(".error-message").html("You have already sent an address on this device")
+                                 $(".error-message").addClass("d-block")}else{
+    $.ajax({
+                           type: "POST",
+                           url: "https://gamefi-token.com/whitelist.php",
+                           dataType:"json",
+                           data: {
+                               "sol_address": sol_address
+                           },
+                           success: function(data){
+                               if(data.error){
+                                 $(".error-message").html(data.error)
+                                 $(".error-message").addClass("d-block")
+                           }else{
+                            localStorage.setItem("wwxqc", "nnp")
+                                   $(".sent-message").html(data.success)
+                              $(".sent-message").addClass("d-block")
+                           }
+                           }
+                         }); 
+                        }
+                         // Set the date we're counting down to
+
+    })
+//     var countDownDate = new Date("Nov 10, 2021 12:00:00").getTime();
+
+// // Update the count down every 1 second
+// var x = setInterval(function() {
+
+//   // Get today's date and time
+//   var now = new Date().getTime();
+
+//   // Find the distance between now and the count down date
+//   var distance = countDownDate - now;
+
+//   // Time calculations for days, hours, minutes and seconds
+//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//   // Display the result in the element with id="countdown"
+//   document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+//   + minutes + "m " + seconds + "s ";
+
+//   // If the count down is finished, write some text
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("countdown").innerHTML = "Mint is Open!!!";
+//   }
+// }, 1000);
+  </script>
+</body>
+
+</html>
