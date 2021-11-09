@@ -51,10 +51,10 @@
   <a href="index.html" class="d-flex align-items-center logo section-header justify-content-center"><img class="logo-img-alt" src="assets/img/Main-removebg-preview.png" alt=""> <span style="font-size: 50px;">SOLNINJA-GO</span></a>
 
     <div class="col-md-12 mt-3">
-        <input class="form-control" id="sol_address" name="sol_address" placeholder="Join Waitlist" required="">
+        <input class="form-control" id="email" name="email" placeholder="Join Waitlist" required="">
     </div><div class="col-md-12 mt-3 text-center"><div class="loading">Loading</div><div class="error-message">
 
-    </div><div class="sent-message"></div><button id="sol_address_btn" type="submit">Send Email</button>
+    </div><div class="sent-message"></div><button id="submit_email_btn" type="submit">Submit Email</button>
 </div></div></div></section>
   </main><!-- End #main -->
 
@@ -83,17 +83,17 @@
  
 <script>
 
-    $(document).on('click', '#sol_address_btn', function() { 
-        sol_address = $("#sol_address").val()
+    $(document).on('click', '#submit_email_btn', function() { 
+        email = $("#email").val()
         wwxqc = localStorage.getItem("wwxqc");
         if(wwxqc=="nnp"){$(".error-message").html("You have already sent an address on this device")
                                  $(".error-message").addClass("d-block")}else{
     $.ajax({
                            type: "POST",
-                           url: "https://gamefi-token.com/whitelist.php",
+                           url: "https://gamefi-token.com/submit_email.php",
                            dataType:"json",
                            data: {
-                               "sol_address": sol_address
+                               "email": email
                            },
                            success: function(data){
                                if(data.error){
