@@ -1,3 +1,4 @@
+
 /*
     DEMO STYLE
 */
@@ -127,8 +128,7 @@ a:focus {
 }
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: black;
+
 }
 
 a[data-toggle="collapse"] {

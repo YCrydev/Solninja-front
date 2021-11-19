@@ -1053,34 +1053,114 @@ section {
 }
 
 /*--------------------------------------------------------------
-# F.A.Q
+# Frequently Asked Questions
 --------------------------------------------------------------*/
-.faq .accordion-collapse {
-  border: 0;
+.faq {
+  /*background: linear-gradient(42deg, #5846f9 0%, #7b27d8 100%);*/
+}
+.faq .section-title h2, .faq .section-title p {
+  color: #fff;
+}
+.faq .section-title h2::after {
+  background: rgba(255, 255, 255, 0.6);
+}
+.faq .faq-list {
+  padding: 0 100px;
+}
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+.faq .faq-list li {
+  padding: 30px;
+  background: #fff;
+  border-radius: 5px;
+  position: relative;
+  border-radius: 15px;
+  border: solid 4px #fe9c13;
+}
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  padding: 0 30px;
+  outline: none;
+  cursor: pointer;
+}
+.faq .faq-list a:hover {
+    color:#fe9d10!important;
 }
 
-.faq .accordion-button {
-  padding: 15px 15px 20px 0;
-  font-weight: 600;
-  border: 0;
-  font-size: 18px;
-  color: #444444;
-  text-align: left;
+.faq .faq-list .icon-help {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  left: 20px;
+  color: #8577fb;
+}
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.faq .faq-list p {
+ color: #2c4964;
+  margin-bottom: 0;
+  
+  padding: 10px 0 0 0;
+}
+.faq .faq-list .icon-show {
+  display: none;
+}
+.faq .faq-list a.collapsed {
+  color: #2c4964;
+}
+.faq .faq-list a.collapsed:hover {
+  color: #5846f9;
+}
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
+.list_div{
+margin: 22px;
+    height: 90px;
+    width: 90px;
+    
+    border: 6px solid #d8d8d8;
+    border-radius: 7px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    transform: rotate( 
+45deg);
+    background: #414042;
 }
 
-.faq .accordion-button:focus {
-  box-shadow: none;
+.list_number{
+        font-family: "Orbitron";
+    font-size: 43px;
+    color:white;
+       transform: rotate(
+315deg);
 }
-
-.faq .accordion-button:not(.collapsed) {
-  background: none;
-  color: #e9950f;
-  border-bottom: 0;
-}
-
-.faq .accordion-body {
-  padding: 0 0 25px 0;
-  border: 0;
+.flip-header-back{
+    font-family: "Orbitron";
+    color:white;
 }
 
 /*--------------------------------------------------------------
@@ -2230,6 +2310,108 @@ section {
   color: #a5c5fe;
   font-size: 14px;
 }
+/*--------------------------------------------------------------
+# info-box
+--------------------------------------------------------------*/
+.info-box .box {
+  padding: 40px 20px;
+  background: #fff;
+  text-align: center;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 15px;
+  border: solid 4px #fe9c13;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.info-box .box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+}
+
+.info-box h3 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.info-box .price {
+  font-size: 36px;
+  color: #444444;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.info-box .price sup {
+  font-size: 20px;
+  top: -15px;
+  left: -3px;
+}
+
+.info-box .price span {
+  color: #bababa;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.info-box img {
+  padding: 30px 40px;
+}
+
+.info-box ul {
+  padding: 0;
+  list-style: none;
+  color: white;
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.info-box ul li {
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.info-box ul .na {
+  color: #ccc;
+  text-decoration: line-through;
+}
+
+.info-box .btn-buy {
+  display: inline-block;
+  padding: 8px 40px 10px 40px;
+  border-radius: 50px;
+  color: #d8d8d8;
+  transition: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  transition: 0.3s;
+  border: 1px solid #d8d8d8;
+}
+
+.info-box .btn-buy:hover {
+  background: #d8d8d8;
+  color: #fff;
+}
+
+.info-box .featured {
+  width: 200px;
+  position: absolute;
+  top: 18px;
+  right: -68px;
+  transform: rotate(45deg);
+  z-index: 1;
+  font-size: 14px;
+  padding: 1px 0 3px 0;
+  background: #d8d8d8;
+  color: #fff;
+}
+
 
 /*--------------------------------------------------------------
 # Footer
@@ -2245,6 +2427,11 @@ section {
   position: fixed;
   bottom: 0;
   width: 100%;
+  padding: 0 0 30px 0;
+  font-size: 14px;
+}
+
+.footer-alt-2{
   padding: 0 0 30px 0;
   font-size: 14px;
 }
