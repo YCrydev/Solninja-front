@@ -122,7 +122,9 @@ a:focus {
 #sidebar ul li a:hover {
   
 }
-
+.page_select.active{
+    background: rgba(255, 255, 255, 0.378);
+}
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
