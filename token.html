@@ -151,6 +151,7 @@
 </div></div></div></section>
 <section class="page_load text-center d-none" id="Tokenomics">
     <span class="section-header text-warning py-0" style="font-size: 40px;">Tokenomics</span>
+    <canvas id="myChart" class="" width="75%" height="200" style="max-height: 300px; max-width: 100%;"></canvas>
 
     </section>
     <section class="page_load text-center d-none" id="Roadmap">
@@ -257,6 +258,7 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
@@ -265,7 +267,58 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      <!-- jQuery Custom Scroller CDN -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-
+     <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Airdrop 25%', 'Marketing 20%', 'Liquidity pool 20%', 'Farming, Staking & Breeding  20%', 'Team 10%','Partnerships and Revenue hits 5%'],
+        datasets: [{
+            label: '% distribution of tokens',
+            data: [25, 20, 20, 20, 10, 5],
+            color: "white",
+            backgroundColor: [
+                'rgba(255,149,11,1)',
+                'rgba(0,0,0,1)',
+                'rgba(255, 255, 255, 1)',
+                'rgba(3,18,232,255)',
+                'rgba(196,3,27,255)',
+                'rgba(26,26,25,255)',
+                'rgba(41,35,0,255)',
+            ],
+            borderColor: [
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)',
+                'rgba(255,149,11,1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+            options: {
+            animations: {
+              tension: {
+                duration: 1000,
+                easing: 'easeInCirc',
+                from: 1,
+                to: 50,
+                loop: true
+              }
+            },
+            legend: {
+                labels: {
+                    color: "white"
+                        }
+                    },
+          }
+         
+        });
+        
+        
+          </script>
 <script>
 
 $(document).ready(function () {
