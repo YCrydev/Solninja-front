@@ -1076,7 +1076,7 @@ section {
 }
 .faq .faq-list li {
   padding: 30px;
-  background: #fff;
+  background: black;
   border-radius: 5px;
   position: relative;
   border-radius: 15px;
@@ -1092,6 +1092,7 @@ section {
   padding: 0 30px;
   outline: none;
   cursor: pointer;
+  color: white;
 }
 .faq .faq-list a:hover {
     color:#fe9d10!important;
@@ -1111,7 +1112,7 @@ section {
   top: 0;
 }
 .faq .faq-list p {
- color: #2c4964;
+ color: white;
   margin-bottom: 0;
   
   padding: 10px 0 0 0;
@@ -1120,7 +1121,7 @@ section {
   display: none;
 }
 .faq .faq-list a.collapsed {
-  color: #2c4964;
+
 }
 .faq .faq-list a.collapsed:hover {
   color: #5846f9;
@@ -2314,8 +2315,10 @@ margin: 22px;
 # info-box
 --------------------------------------------------------------*/
 .info-box .box {
-  padding: 40px 20px;
-  background: #fff;
+  padding: 10px 10px;
+  margin-top: 20px;
+  background: #000000;
+  color: white;
   text-align: center;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   border-radius: 15px;
@@ -2325,10 +2328,10 @@ margin: 22px;
   transition: 0.3s;
 }
 
-.info-box .box:hover {
+/* .info-box .box:hover {
   transform: scale(1.1);
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-}
+} */
 
 .info-box h3 {
   font-weight: 700;
