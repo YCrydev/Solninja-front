@@ -505,6 +505,7 @@ RARITY: 7.5%</p>
         if(wwxqc=="nnp"){$(".error-message").html("You have already sent an address on this device")
                                  $(".error-message").addClass("d-block")}else{
     $.ajax({
+      
                            type: "POST",
                            url: "https://gamefi-token.com/whitelist.php",
                            dataType:"json",
