@@ -177,7 +177,7 @@
       
       </div>
         </div>
-
+<br>
     </div><div class="sent-message"></div>
 </div></div></div></section>
 <section class="page_load text-center d-none info-box" id="Tokenomics">
@@ -454,12 +454,17 @@ $(document).ready(function () {
             function load_selected_page(){
                 page_slected = window.location.hash
                 if(page_slected==""){
-                }else{
+                }else if(page_slected=="#Home"){
+                  $("#footer").addClass("d-none")
+                }
+                else{
+                  $("#footer").removeClass("d-none")
                 $(".page_select").removeClass("active")
                 $("[href*='"+page_slected+"']").addClass("active")
                 page_slected= page_slected.replace('#', '');
                 $(".page_load").addClass("d-none")
                 $("#"+page_slected).removeClass("d-none")
+                
                 }
             }
             $("#sidebar").mCustomScrollbar({
